@@ -1,0 +1,14 @@
+body {
+  background: #f1b3f1;
+  color: #1d1f30;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}

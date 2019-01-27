@@ -1,0 +1,50 @@
+{
+  "name": "open-in-local-git",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "build"
+  },
+  "author": "wuz <sup@wuz.fyi>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.2",
+    "electron-builder": "^20.38.5"
+  },
+  "dependencies": {
+    "electron-log": "^2.2.17",
+    "electron-store": "^2.0.0",
+    "simple-git": "^1.107.0",
+    "url": "^0.11.0"
+  },
+  "build": {
+    "appId": "fyi.wuz.openInLocalGit",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  }
+}
